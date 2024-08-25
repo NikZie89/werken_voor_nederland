@@ -5,6 +5,8 @@ library(RSelenium)
 library(rvest)
 library(tidyverse)
 
+# scraping is allowed
+robotstxt::robotstxt("https://www.werkenvoornederland.nl")
 
 # werkenvoornederland requires Selenium to scrape the links to the job postings
 # as all links are dynamically loaded once you scroll down
